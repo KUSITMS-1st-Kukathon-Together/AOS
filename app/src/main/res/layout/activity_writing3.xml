@@ -1,0 +1,268 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".WritingActivity1">-->
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="128dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/imageView6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:src="@drawable/lfet_actionable" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="8dp"-->
+<!--            android:layout_marginLeft="150dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:src="@drawable/above_dots2" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="150dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:fontFamily="@font/pretendard_semibold"-->
+<!--            android:text="완료" />-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="26dp"-->
+<!--        android:layout_marginBottom="533dp"-->
+<!--        android:fontFamily="@font/pretendard_semibold"-->
+<!--        android:text="조심해요!"-->
+<!--        android:textColor="#090A0A"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/button3"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:src="@drawable/plus"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="13dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="13dp"/>&ndash;&gt;-->
+
+
+<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/choose"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="327dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="40dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:background="@drawable/whitegrey_button"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:fontFamily="@font/pretendard_medium"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:text="게시글의 주제를 선택해주세요"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textColor="#090A0A"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textSize="16sp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintTop_toTopOf="@+id/linearLayout"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintVertical_bias="0.208"/>&ndash;&gt;-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/chooseSubject"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="97dp"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="47dp"-->
+<!--        android:layout_marginEnd="44dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:src="@drawable/choose"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="42dp"-->
+<!--        android:layout_marginEnd="42dp"-->
+<!--        android:layout_marginBottom="45dp"-->
+<!--        android:contentDescription="TODO"-->
+<!--        android:src="@drawable/btn_location"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editText3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="42dp"-->
+<!--        android:layout_marginEnd="42dp"-->
+<!--        android:layout_marginBottom="35dp"-->
+<!--        android:background="@drawable/yellow_button"-->
+<!--        android:fontFamily="@font/pretendard_medium"-->
+<!--        android:text="다음"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText3"-->
+<!--        android:layout_width="324dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:fontFamily="@font/pretendard_medium"-->
+<!--        android:hint="제목을 작성해 주세요."-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editText4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView6" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText4"-->
+<!--        android:layout_width="324dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="292dp"-->
+<!--        android:fontFamily="@font/pretendard_medium"-->
+<!--        android:hint="내용을 작성해 주세요."-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.482"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editText3" />-->
+
+<!--    <LinearLayout-->
+<!--        android:src="@drawable/img_becareful_dropdown"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@drawable/lfet_actionable"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/above_dots2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="15dp"
+            android:text="완료" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="조심해요!"
+            android:fontFamily="@font/pretendard_semibold"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#090A0A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+<!--        <Button-->
+<!--            android:text="게시물의 주제를 선택해 주세요."-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="330dp"-->
+<!--            android:layout_height="50dp"/>-->
+
+<!--        <TextView-->
+<!--            android:text="게시글의 주제를 선택해 주세요."-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/choosetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
