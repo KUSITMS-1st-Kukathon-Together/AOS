@@ -7,6 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
         <!-- 메뉴바 -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -25,6 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/white"
+                android:fontFamily="@font/pretendard_bold"
                 android:gravity="center"
                 android:text="역삼동"
                 android:textColor="@color/black"
@@ -96,6 +99,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
+                android:fontFamily="@font/pretendard_medium"
                 android:text="전체보기"
                 android:textColor="#979C9E"
                 android:textSize="12sp"
@@ -129,7 +133,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.118"
-                    app:srcCompat="@drawable/buttons" />
+                    app:srcCompat="@drawable/img_home_yellowrect"/>
 
                 <TextView
                     android:id="@+id/cat11"
@@ -138,7 +142,8 @@
                     android:backgroundTint="@color/white"
                     android:gravity="center"
                     android:text="공사 및 점검"
-                    android:textColor="#979C9E"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/button"
                     app:layout_constraintEnd_toEndOf="@+id/button"
@@ -152,6 +157,7 @@
                     android:backgroundTint="@color/white"
                     android:gravity="center"
                     android:text="엘베 고장ㅠㅠ"
+                    android:fontFamily="@font/pretendard_bold"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -168,6 +174,7 @@
                     android:backgroundTint="@color/white"
                     android:gravity="center"
                     android:text="투게더 아파트"
+                    android:fontFamily="@font/pretendard_regular"
                     android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -184,6 +191,7 @@
                     android:backgroundTint="@color/white"
                     android:foregroundGravity="left"
                     android:text="지금 투게더 아파트 A동\n엘레베이터 고장이라 안내 방송··· "
+                    android:fontFamily="@font/pretendard_regular"
                     android:textColor="@color/black"
                     android:textSize="11sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -200,6 +208,7 @@
                     android:backgroundTint="@color/white"
                     android:gravity="center"
                     android:text="2시간전"
+                    android:fontFamily="@font/pretendard_medium"
                     android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -235,7 +244,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.118"
-                    app:srcCompat="@drawable/buttons" />
+                    app:srcCompat="@drawable/img_home_yellowrect"/>
 
                 <TextView
                     android:id="@+id/cat22"
@@ -243,8 +252,9 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:gravity="center"
-                    android:text="공사 및 점검"
-                    android:textColor="#979C9E"
+                    android:text="사고 상황"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/button1"
                     app:layout_constraintEnd_toEndOf="@+id/button1"
@@ -257,7 +267,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:gravity="center"
-                    android:text="엘베 고장ㅠㅠ"
+                    android:text="시즈니 상가 화재"
+                    android:fontFamily="@font/pretendard_bold"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -273,7 +284,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:gravity="center"
-                    android:text="투게더 아파트"
+                    android:text="시즈니 상가"
+                    android:fontFamily="@font/pretendard_regular"
                     android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -289,7 +301,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:foregroundGravity="left"
-                    android:text="지금 투게더 아파트 A동\n엘레베이터 고장이라 안내 방송··· "
+                    android:text="교차로 쪽에 있는 시즈니 상\n가에서 화재 발생해서 도로··· "
+                    android:fontFamily="@font/pretendard_regular"
                     android:textColor="@color/black"
                     android:textSize="11sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -306,6 +319,7 @@
                     android:backgroundTint="@color/white"
                     android:gravity="center"
                     android:text="2시간전"
+                    android:fontFamily="@font/pretendard_medium"
                     android:textColor="#6C7072"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -324,7 +338,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="나만을 위한 온길"
+                android:text="내 주변 온길"
+                android:fontFamily="@font/pretendard_bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -372,7 +387,6 @@
                 app:srcCompat="@drawable/cat3" />
 
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -392,6 +406,7 @@
                 android:backgroundTint="@color/white"
                 android:gravity="center"
                 android:text="역삼동"
+                android:fontFamily="@font/pretendard_bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -409,6 +424,7 @@
                 android:backgroundTint="@color/white"
                 android:gravity="center"
                 android:text="의 온길"
+                android:fontFamily="@font/pretendard_bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -461,7 +477,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.03"
-                            app:srcCompat="@drawable/buttons" />
+                            app:srcCompat="@drawable/img_home_yellowrect" />
 
                         <TextView
                             android:id="@+id/cat33"
@@ -469,8 +485,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:gravity="center"
-                            android:text="공사 및 점검"
-                            android:textColor="#979C9E"
+                            android:text="도로 상태"
+                            android:fontFamily="@font/pretendard_medium"
+                            android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="@+id/button3"
                             app:layout_constraintEnd_toEndOf="@+id/button3"
@@ -483,7 +500,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="엘베 고장ㅠㅠ"
+                            android:text="보도 블럭 하차"
+                            android:fontFamily="@font/pretendard_bold"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -499,7 +517,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="투게더 아파트"
+                            android:text="서울 강남구 역삼로 7길 22"
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -517,7 +536,8 @@
                             android:layout_marginRight="13dp"
                             android:backgroundTint="@color/white"
                             android:foregroundGravity="left"
-                            android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요.길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                            android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요. 길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="@color/black"
                             android:textSize="11sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -532,7 +552,7 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:gravity="center"
-                            android:text="2시간전"
+                            android:text="최근"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -570,15 +590,16 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.03"
-                            app:srcCompat="@drawable/buttons" />
+                            app:srcCompat="@drawable/img_home_yellowrect" />
 
                         <TextView
                             android:id="@+id/cat44"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
-                            android:text="공사 및 점검"
-                            android:textColor="#979C9E"
+                            android:text="도로 상태"
+                            android:fontFamily="@font/pretendard_medium"
+                            android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="@+id/button4"
                             app:layout_constraintEnd_toEndOf="@+id/button4"
@@ -591,7 +612,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="엘베 고장ㅠㅠ"
+                            android:text="물 웅덩이 고인 곳 조심하세요"
+                            android:fontFamily="@font/pretendard_bold"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -607,7 +629,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="투게더 아파트"
+                            android:text="서울 강남구 테헤란로 14길"
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -625,7 +648,8 @@
                             android:layout_marginRight="13dp"
                             android:backgroundTint="@color/white"
                             android:foregroundGravity="left"
-                            android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요.길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                            android:text="비가,, 어제 내려서 그런지 물 웅덩이 고여있어요. 신발 다 버렸네요. 모두 조심하세요."
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="@color/black"
                             android:textSize="11sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -640,7 +664,7 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:gravity="center"
-                            android:text="2시간전"
+                            android:text="1시간전"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -649,6 +673,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.95" />
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -677,15 +702,16 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.03"
-                            app:srcCompat="@drawable/buttons" />
+                            app:srcCompat="@drawable/img_home_yellowrect" />
 
                         <TextView
                             android:id="@+id/cat55"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
-                            android:text="공사 및 점검"
-                            android:textColor="#979C9E"
+                            android:text="도로 상태"
+                            android:fontFamily="@font/pretendard_medium"
+                            android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="@+id/button5"
                             app:layout_constraintEnd_toEndOf="@+id/button5"
@@ -698,7 +724,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="엘베 고장ㅠㅠ"
+                            android:text="인도 위 장애물"
+                            android:fontFamily="@font/pretendard_bold"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -714,7 +741,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="투게더 아파트"
+                            android:text="서울 강남구 테헤란로 204길"
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -732,7 +760,8 @@
                             android:layout_marginRight="13dp"
                             android:backgroundTint="@color/white"
                             android:foregroundGravity="left"
-                            android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요.길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                            android:text="건물 공사에 필요한 자재들이 인도까지 침범하여 나와있습니다. 핸드폰 보고 걷다가 발 걸려서 넘어질 뻔 했습니다. 다른 분들은 주의하시길 바라겠습니다."
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="@color/black"
                             android:textSize="11sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -785,14 +814,15 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.03"
-                            app:srcCompat="@drawable/buttons" />
+                            app:srcCompat="@drawable/homewhiteyellow_button" />
 
                         <TextView
                             android:id="@+id/cat66"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
-                            android:text="공사 및 점검"
+                            android:text="도로 상태"
+                            android:fontFamily="@font/pretendard_medium"
                             android:textColor="#979C9E"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="@+id/button6"
@@ -806,7 +836,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="엘베 고장ㅠㅠ"
+                            android:text="역삼사거리 인도 엉망"
+                            android:fontFamily="@font/pretendard_bold"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -822,7 +853,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="13dp"
                             android:backgroundTint="@color/white"
-                            android:text="투게더 아파트"
+                            android:text="서울 강남구 역삼로7길 2"
+                            android:fontFamily="@font/pretendard_regular"
                             android:textColor="#6C7072"
                             android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -840,7 +872,7 @@
                             android:layout_marginRight="13dp"
                             android:backgroundTint="@color/white"
                             android:foregroundGravity="left"
-                            android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요.길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                            android:text="어제 음주운전으로 인한 교통사고가 있었다너니 오늘 아침에 보니깐 도로 꼴이 말이 아님.. 사고 흔적 아직도 남아있고 차 범퍼 파편들도 아직 안 치웠네"
                             android:textColor="@color/black"
                             android:textSize="11sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -867,13 +899,21 @@
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
                 </LinearLayout>
+
             </ScrollView>
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
 </layout>
+
