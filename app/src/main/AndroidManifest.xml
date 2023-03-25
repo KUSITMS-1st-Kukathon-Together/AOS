@@ -19,12 +19,20 @@
         android:theme="@style/Theme.Together1"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
         <activity
-            android:name=".WritingActivity2_2"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".WritingActivity4"
+            android:name=".Post2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Post1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WritingActivity2_2"
             android:exported="false" />
         <activity
             android:name=".WritingActivity3"
@@ -37,23 +45,21 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB22OqMmEoSaiuhS378hizF8Uh4wuCuggU" />
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyB22OqMmEoSaiuhS378hizF8Uh4wuCuggU" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps">
-        </activity>
+            android:label="@string/title_activity_maps" />
     </application>
 
 </manifest>
