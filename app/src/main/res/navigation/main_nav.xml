@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/carefulFragment2">
+    <fragment
+        android:id="@+id/carefulFragment2"
+        android:name="com.team2.together1.CarefulFragment"
+        android:label="fragment_careful"
+        tools:layout="@layout/fragment_careful" >
+        <action
+            android:id="@+id/action_carefulFragment2_to_recommendFragment2"
+            app:destination="@id/recommendFragment2" />
+        <action
+            android:id="@+id/action_carefulFragment2_to_recommendFragment22"
+            app:destination="@id/recommendFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendFragment2"
+        android:name="com.team2.together1.RecommendFragment"
+        android:label="fragment_recommend"
+        tools:layout="@layout/fragment_recommend" >
+        <action
+            android:id="@+id/action_recommendFragment2_to_carefulFragment2"
+            app:destination="@id/carefulFragment2" />
+    </fragment>
+</navigation>
