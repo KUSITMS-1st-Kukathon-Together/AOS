@@ -20,6 +20,25 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".FirstActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FirstActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity2"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -32,33 +51,18 @@
             android:name=".PostActivity"
             android:exported="false" />
         <activity
-            android:name=".WritingActivity2_2"
-            android:exported="false" />
-        <activity
-            android:name=".WritingActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".WritingActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".WritingActivity1"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
-            <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyB22OqMmEoSaiuhS378hizF8Uh4wuCuggU" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB22OqMmEoSaiuhS378hizF8Uh4wuCuggU" />
+
         <activity
             android:name=".MapsActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_maps" />
     </application>
 

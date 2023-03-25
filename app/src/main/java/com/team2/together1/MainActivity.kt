@@ -1,5 +1,6 @@
 package com.team2.together1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.team2.together1.databinding.ActivityMainBinding
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initBottomNavigation()
+
+
     }
 
     private fun initBottomNavigation(){

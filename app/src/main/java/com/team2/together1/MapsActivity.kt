@@ -1,6 +1,7 @@
 package com.team2.together1
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
@@ -9,6 +10,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Looper
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -38,8 +40,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMapsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+//        binding = ActivityMapsBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+        setContentView(R.layout.activity_maps)
+
+        val btndone = findViewById<Button>(R.id.button4)
+        btndone.setOnClickListener {
+            startActivity(Intent(this, Post2Activity::class.java))
+        }
+
 
 
         // 사용할 권한 array로 저장
@@ -61,8 +70,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Specify the types of place data to return.
 //        autocompleteFragment.setPlaceFields(listOf(Place.Field.ID, Place.Field.NAME))
-
-
 
     }
 

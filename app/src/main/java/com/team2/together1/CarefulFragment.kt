@@ -1,38 +1,33 @@
 package com.team2.together1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.findFragment
 import androidx.navigation.findNavController
+import com.team2.together1.databinding.FragmentCarefulBinding
 
-@Suppress("UNREACHABLE_CODE")
 class CarefulFragment : Fragment() {
 
+    lateinit var binding: FragmentCarefulBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        binding = FragmentCarefulBinding.inflate(inflater, container, false)
 
-        // Inflate the layout for this fragment
+        binding.btnPost.setOnClickListener {
+            startActivity(Intent(activity, PostActivity::class.java))
+        }
 
-        val view = inflater.inflate(R.layout.fragment_careful, container, false)
-        return view
-
-//        view.findViewById<Button>(R.id.btn1).setOnClickListener {
-//            it.findNavController().navigate(R.id.action_carefulFragment2_to_recommendFragment2)
-//
-//        }
-
-
-
-
+        return binding.root
     }
 
 
