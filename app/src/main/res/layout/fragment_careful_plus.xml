@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0">
+
+
+
+        <!--     위에 도로 상태 부분-->
+        <LinearLayout
+            android:id="@+id/abovebtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="InvalidId,MissingConstraints">
+
+            <ImageView
+                android:src="@drawable/lfet_actionable"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:text="도로상태"
+                android:textColor="#090A0A"
+                android:textSize="20sp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/status1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:fontFamily="@font/pretendard_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="역삼동"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.045"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.02" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/status2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:fontFamily="@font/pretendard_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="의 온길"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/status1"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.02" />-->
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="411dp"
+            android:layout_height="672dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status2"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="UnknownIdInLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="900dp"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view"
+                    app:layout_constraintVertical_bias="0.03">
+
+                    <ImageView
+                        android:id="@+id/button3"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.03"
+                        app:srcCompat="@drawable/img_home_yellowrect" />
+
+                    <TextView
+                        android:id="@+id/cat33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:gravity="center"
+                        android:text="도로 상태"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/button3"
+                        app:layout_constraintEnd_toEndOf="@+id/button3"
+                        app:layout_constraintStart_toStartOf="@+id/button3"
+                        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+                    <TextView
+                        android:id="@+id/undertitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="보도 블럭 하차"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button3"
+                        app:layout_constraintVertical_bias="0.071" />
+
+                    <TextView
+                        android:id="@+id/underlocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="서울 강남구 역삼로 7길 22"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/undertitle"
+                        app:layout_constraintVertical_bias="0.1" />
+
+                    <TextView
+                        android:id="@+id/underbody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:foregroundGravity="left"
+                        android:text="파라메디 건물 쪽에 있는 보도 블럭 빠져있는 곳이 많네요. 길 걷다가 넘어질 뻔 했어요,, 하자 신고 하기는 했는데 조심하셔야 할 거 같아요."
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/underlocation"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <TextView
+                        android:id="@+id/undertime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="최근"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.95"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.95" />
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <ImageView
+                        android:id="@+id/button4"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.03"
+                        app:srcCompat="@drawable/img_home_yellowrect" />
+
+                    <TextView
+                        android:id="@+id/cat44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:text="도로 상태"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/button4"
+                        app:layout_constraintEnd_toEndOf="@+id/button4"
+                        app:layout_constraintStart_toStartOf="@+id/button4"
+                        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+                    <TextView
+                        android:id="@+id/undertitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="물 웅덩이 고인 곳 조심하세요"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button4"
+                        app:layout_constraintVertical_bias="0.071" />
+
+                    <TextView
+                        android:id="@+id/underlocation1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="서울 강남구 테헤란로 14길"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/undertitle1"
+                        app:layout_constraintVertical_bias="0.1" />
+
+                    <TextView
+                        android:id="@+id/underbody1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:foregroundGravity="left"
+                        android:text="비가,, 어제 내려서 그런지 물 웅덩이 고여있어요. 신발 다 버렸네요. 모두 조심하세요."
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/underlocation1"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <TextView
+                        android:id="@+id/undertime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="1시간전"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.95"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.95" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <ImageView
+                        android:id="@+id/button5"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.03"
+                        app:srcCompat="@drawable/img_home_yellowrect" />
+
+                    <TextView
+                        android:id="@+id/cat55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:text="도로 상태"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/button5"
+                        app:layout_constraintEnd_toEndOf="@+id/button5"
+                        app:layout_constraintStart_toStartOf="@+id/button5"
+                        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+                    <TextView
+                        android:id="@+id/undertitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="인도 위 장애물"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button5"
+                        app:layout_constraintVertical_bias="0.071" />
+
+                    <TextView
+                        android:id="@+id/underlocation2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="서울 강남구 테헤란로 204길"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/undertitle2"
+                        app:layout_constraintVertical_bias="0.1" />
+
+                    <TextView
+                        android:id="@+id/underbody2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:foregroundGravity="left"
+                        android:text="건물 공사에 필요한 자재들이 인도까지 침범하여 나와있습니다. 핸드폰 보고 걷다가 발 걸려서 넘어질 뻔 했습니다. 다른 분들은 주의하시길 바라겠습니다."
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/underlocation2"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <TextView
+                        android:id="@+id/undertime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="2시간전"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.95"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.95" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <ImageView
+                        android:id="@+id/button6"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.03"
+                        app:srcCompat="@drawable/homewhiteyellow_button" />
+
+                    <TextView
+                        android:id="@+id/cat66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:text="도로 상태"
+                        android:textColor="#979C9E"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/button6"
+                        app:layout_constraintEnd_toEndOf="@+id/button6"
+                        app:layout_constraintStart_toStartOf="@+id/button6"
+                        app:layout_constraintTop_toTopOf="@+id/button6" />
+
+                    <TextView
+                        android:id="@+id/undertitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="역삼사거리 인도 엉망"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button6"
+                        app:layout_constraintVertical_bias="0.071" />
+
+                    <TextView
+                        android:id="@+id/underlocation3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="서울 강남구 역삼로7길 2"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/undertitle3"
+                        app:layout_constraintVertical_bias="0.1" />
+
+
+
+                    <TextView
+                        android:id="@+id/underbody3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:backgroundTint="@color/white"
+                        android:foregroundGravity="left"
+                        android:text="어제 음주운전으로 인한 교통사고가 있었다너니 오늘 아침에 보니깐 도로 꼴이 말이 아님.. 사고 흔적 아직도 남아있고 차 범퍼 파편들도 아직 안 치웠네"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/underlocation3"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <TextView
+                        android:id="@+id/undertime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="2시간전"
+                        android:textColor="#6C7072"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.95"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.95" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+<!--        <Button-->
+<!--            android:id="@+id/my_button"-->
+<!--            android:layout_width="312dp"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:background="@drawable/yellow_button"-->
+<!--            android:fontFamily="@font/pretendard_medium"-->
+<!--            android:text="완료"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.493"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="312dp"
+            android:layout_height="38dp"
+            android:background="@drawable/yellow_button"
+            android:fontFamily="@font/pretendard_medium"
+            android:layout_marginBottom="15dp"
+            android:text="완료"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>
+
