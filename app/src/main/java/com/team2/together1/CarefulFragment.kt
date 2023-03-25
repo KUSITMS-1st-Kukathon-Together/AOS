@@ -27,6 +27,10 @@ class CarefulFragment : Fragment() {
             startActivity(Intent(activity, PostActivity::class.java))
         }
 
+        binding.string1.setOnClickListener {
+            startActivity(Intent(activity, DetailActivity::class.java))
+        }
+
         return binding.root
     }
 
